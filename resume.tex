@@ -1,3 +1,5 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
 % LaTeX Template
 % Version 1.1 (30/4/2014)
 %
@@ -6,6 +8,14 @@
 %
 % Original repository:
 % https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[]{deedy-resume-openfont}
@@ -43,7 +53,8 @@
 %     EDUCATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Education} 
+
+\section{Education}
 
 \subsection{New College}
 \subsection{of Florida}
@@ -57,29 +68,27 @@
 \location{Expected May 2017}
 \sectionsep
 
-\subsection{Pine View}
-\subsection{High School}
-\location{Grad. May 2013|  Osprey, FL}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     COURSEWORK
+%     Technology
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Coursework}
 
-\subsection{Undergraduate}
+\section{Languages}
+\descript{Proficient}
+Python,  JavaScript,  Node,  HTML,  CSS,  SQL \\
+\descript{Experience}
+C, Java, PHP, Mongo, Bash
+\sectionsep
 
-Computer Architecture \\
-OOD Patterns in Java\\
-Data Structures and Algorithms \\
-Embedded Programming \\
-Data Mining \\
-Ethical Hacking \\
-Discrete Mathematics \\
-Computer Security and Cryptography \\
-Computer Networks \\
-Software Engineering \\
+\section{Frameworks}
+\descript{Web}
+Angular, Express, Serverless, Passport, Bootstrap \\
+
+\sectionsep
+\section{Tools}
+Nmap, Shodan, Burp, Unix, Docker, SwaggerIO
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -87,9 +96,8 @@ Software Engineering \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Awards}
-\subsection{USCC}
-Invited to the 2016 US Cyber Challenge Western Regional Cyber Camp And\\
-Won the Department of Homeland Security Science and Technology Directorate Supported USCC CTF Event \\
+USCC CTF Winner\\
+AFFIRM Security Summit Invitee\\
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -99,16 +107,16 @@ Won the Department of Homeland Security Science and Technology Directorate Suppo
 \section{Volunteering}
 Hour of Code Initiative \\
 US Cyber Challenge \\
+Ocean Technology Club\\
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     LINKS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Links} 
+\section{Links}
 Github:// \href{https://github.com/btcrs}{\custombold{btcrs}} \\
 LinkedIn://  \href{https://www.linkedin.com/in/btcrs}{\custombold{btcrs}} \\
-Twitter://  \href{https://twitter.com/btcrs}{\custombold{@btcrs}} \\
 \sectionsep
 
 
@@ -123,31 +131,24 @@ Twitter://  \href{https://twitter.com/btcrs}{\custombold{@btcrs}} \\
 \begin{minipage}[t]{0.70\textwidth} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     SKILLS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Skills}
-\runsubsection{Languages} \\
-\location{Experienced: Python \textbullet{}   Javascript \textbullet{} Node \textbullet{}  HTML/CSS}
-\location{Familiar: C \textbullet{} Bash \textbullet{} SQL \textbullet{} PHP  \textbullet{} Java}
-\sectionsep
-\runsubsection{Frameworks} \\
-\location{Flask \textbullet{} Angular \textbullet{} Bootstrap \textbullet{}  Sphinx \textbullet{}  Express  \textbullet{}  Passport}
-\sectionsep
-\runsubsection{Tools} \\
-\location{Burp \textbullet{} Nmap \textbullet{} Vim \textbullet{}  Shodan \textbullet{}  Unix  \textbullet{}  Git \textbullet{}  Docker \textbullet{}  Rancher \textbullet{} Atom}
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EXPERIENCE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experience}
 
+\runsubsection{Mote Marine Laboratory}
+\descript{| Ocean Technology Teacher}
+\location{February 2017 - Present | Sarasota, FL}
+\vspace{\topsep}
+\begin{tightemize}
+\item Sourced components to build a field datalogger based on the Arduino platform.
+\item Created a build log and developed a curriculum to help teach high school students how microprocessors operate, embedded programming, and low-level communication. 
+\end{tightemize}
+\sectionsep
+
 \runsubsection{Cyber Ninjas}
 \descript{| Cyber Security Intern}
 \location{January 2016 - Present | Sarasota, FL}
-\vspace{\topsep} 
 \begin{tightemize}
 \item Play a significant role in red team engagements. Handle information gathering, exploitation of relevant, high-impact vulnerabilities, and reporting of findings.
 \item Create single-page, self-contained web applications to teach current topics in cyber security including XSS, SQL Injection, and Session Fixation.
@@ -156,20 +157,18 @@ Twitter://  \href{https://twitter.com/btcrs}{\custombold{@btcrs}} \\
 
 \runsubsection{Mote Marine Laboratory}
 \descript{| Software Engineering Intern}
-\location{January 2016 - Present | Sarasota, FL}
-\vspace{\topsep}
+\location{January 2016 - January 2017 | Sarasota, FL}
 \begin{tightemize}
-\item Creating Python library and scripting engine to control the BB4 Optical Phytoplankton Discriminator.
-\item Overseeing IOT security to secure both the administration application and BB4 devices.
+\item Created a Python library and scripting engine to control the BB4 Optical Phytoplankton Discriminator.
+\item Oversaw IOT security to secure both the administration application and BB4 devices.
 \end{tightemize}
 \sectionsep
 
 \runsubsection{Star2star}
 \descript{| Software Engineering Intern}
 \location{October 2015 - December 2015 | Sarasota, FL}
-\vspace{\topsep}
 \begin{tightemize}
-\item Created a workflow for providing partners with requested reports using IPython scripts to interface with CPQ and construct canned reports locked down by ACLs
+\item Created a work flow for providing partners with requested reports using IPython scripts to interface with CPQ and construct canned reports locked down by ACLs
 \item Altered the quote generation business logic to reduce the number of switches included and sent to any given location by as much as 50 percent.
 \end{tightemize}
 \sectionsep
@@ -191,14 +190,15 @@ Twitter://  \href{https://twitter.com/btcrs}{\custombold{@btcrs}} \\
 \runsubsection{Porter}
 \descript{| Reporting Engine}
 \location{Jan 2016 – Present}
-A framework for integrating with common penetration testing tools to automate the process of reporting findings. Uses Python and Python-Docx while interfacing with Metasploit, Nessus, and flat file input.
+A framework for interfacing with common penetration testing tools to automate the process of reporting findings. Used Python and a DOCX templating engine to bootstrap long term engagement reports by using Metasploit's SQL database, CSV output from Nessus, and flat file input.
 \sectionsep
 
-\runsubsection{Drippy}
-\descript{| Drip Irrigation Garden Monitor}
-\location{Aug 2015 – Dec 2015}
-A Python program that lives on a Raspberry Pi used to water my gardens. A listener repeatedly polls a Twitter feed looking for control statements. If it finds one, it opens a solenoid valve for the specified amount of time allowing water to flow to the garden.
+\runsubsection{Buckets}
+\descript{| Judging NBA lineups by floor coverage}
+\location{Aug 2016 – Dec 2016}
+Constructed the strongest offensive five man lineups using current (2015 - 2016) starting NBA players. Using the NBA player's data API I wrote a Node program that gathered every attempted shot taken during the 2015-2016 season, determined each players shooting average for 12 spatial zones of the scoring area, and tried to pair players that occupied most of the court with strong shooting.
 \sectionsep
+
 
 \end{minipage} 
 \end{document}  \documentclass[]{article}
